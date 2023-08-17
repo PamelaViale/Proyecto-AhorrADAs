@@ -1,16 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<<<<<<< HEAD
+=======
+    <script src="https://kit.fontawesome.com/e0b1eca94c.js" crossorigin="anonymous"></script>
+>>>>>>> origin
     <link rel="stylesheet" href="style.css">
     <title>Proyecto Ahorradas</title>
 </head>
+
 <body>
+<<<<<<< HEAD
 
     
+=======
+ <!-- -------------------------------------------------------------
+   -------------------------- NavBar-------------------------------
+------------------------------------------------------------------->
+    <nav class="navbar is-primary is-spaced" id="navbar">
+        <div class="navbar-logo is-size-2 is-flex has-text-white  ">
+            <i class="fas fa-wallet mr-2 mt-3" aria-hidden="true"></i>
+            <p class="has-text-weight-bold">AhorrADAs</p>
+        </div>
+        <div class="navbar-menu navbar-end m-3">
+            <div class="items-navbar is-flex is-size-5 ">
+                <a class="item-navbar mr-4 has-text-white" id="button-balance"><i class="fas fa-chart-line mr-2 "
+                        aria-hidden="true"></i>Balance</a>
+
+                <a class="item-navbar mr-4 has-text-white" id="button-categoria"><i class="fas fa-tag mr-2"
+                        aria-hidden="true"></i>Categoria</a>
+                <a class="item-navbar mr-4 has-text-white" id="button-reportes"><i class="fas fa-chart-pie mr-2"
+                        aria-hidden="true"></i>Reportes</a>
+            </div>
+        </div>
+    </nav>
+<!-- -------------------------------------------------------------
+   -------------------------- Main-------------------------------
+------------------------------------------------------------------->
+    <main class="container is-flex mt-6 is-multiline ">
+        <section class="colums-both column is-3 ">
+           <!-- -------------------------------------------------------------
+   -------------------------- Balance-------------------------------
+------------------------------------------------------------------->
+            <div class="balance-section column is-flex mb-3 ">
+                <div class="is-flex is-flex-direction-column ">
+                    <h1 class="title is-3 mb-6 has-text-weight-bold ">Balance</h1>
+                    <div class="items-balance columns is-flex is-flex-direction-column">
+                        <div class="is-flex">
+                            <p class="column mb-2">Ganancia</p>
+                            <div class="items-balance column mb-2 has-text-success has-text-rigth">+$0</div>
+                        </div>
+                        <div class="is-flex">
+                            <p class=" column mb-2">Gastos</p>
+                            <div class="items-balance column mb-2 has-text-danger has-text-rigth">-$0</div>
+                        </div>
+                        <div class="is-flex ">
+                            <p class=" column mb-2">Total</p>
+                            <div class=" column mb-2 has-text-weight-bold has-text-rigth"> $0</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+<!-- -------------------------------------------------------------
+   --------------------------Filtro-------------------------------
+------------------------------------------------------------------->
+            <section class="filtro-section column image ">
+                <div class="is-flex is-justify-content-space-between mb-5">
+                    <h2 class=" title is-4 has-text-weight-bold">Filtros </h2>
+                    <a href="" id="button-filtros">Ocultar Filtros</a>
+                </div>
+                <div class="">
+                    <div class="is-flex is-flex-direction-column has-text-weight-bold mb-2">
+                        <label class="mb-2" for="">Tipo</label>
+                        <select class="select mb-2" name="" id="">
+                            <option value="">Todos</option>
+                            <option value="">Gastos</option>
+                            <option value="">Ganancia</option>
+                           
+                        </select>
+                       
+                    </div>
+                    <div class="is-flex is-flex-direction-column has-text-weight-bold mb-2">
+                        <label class="mb-2" for="">Categoría</label>
+                        <select class="select mb-2" id="">
+                            <option value="">Comidas</option>
+                            <option value="">Servicios</option>
+                            <option value="">Salidas</option>
+                            <option value="">Transporte</option>
+                        </select>
+                    </div>
+                    <div class="is-flex is-flex-direction-column has-text-weight-bold mb-2">
+                        <label class="mb-2" for="">Desde</label>
+                        <input class="contro mb-2" type="date" name="" id="">
+                    </div>
+                    <div class="is-flex is-flex-direction-column has-text-weight-bold mb-2">
+                        <label class="mb-2" for="">Ordenar por</label>
+                        <select class="select mb-2" name="" id="">
+                            <option value="">Mas reciente</option>
+                            <option value="">Menos reciente</option>
+                            <option value="">Mayor monto</option>
+                            <option value="">Menor monto</option>
+                            <option value="">A/Z</option>
+                            <option value="">Z/A</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+        </section>
+       <!-- -------------------------------------------------------------
+   -------------------------- Operaciones-------------------------------
+------------------------------------------------------------------->
+        <section class="operations-section column is-8 mb-6 ">
+            <div class="is-flex is-justify-content-space-between ">
+                <h2 class="has-text-weight-bold title is-4">Operaciones</h2>
+                <button class="button is-medium is-primary"><a class="has-text-white" id="button-operacion" href="">+ Nueva
+                        Operación</a></button>
+            </div>
+            <div>
+                <figure><img class="img-operaciones image is-100x120" src="assets/undraw_Investment_data_re_sh9x.png"
+                        alt=""></figure>
+                <div class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+                    <h3 class="has-text-weight-bold is-size-4 mb-3">Sin resultados</h3>
+                    <p>Cambiar los filtros o agregar operaciones</p>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+>>>>>>> origin
 
     <script src="scrip.js"></script>
 </body>
+
 </html>
