@@ -1,0 +1,19 @@
+body {
+    background-color: hsl(0, 3%, 93%);
+  }
+.operations-section{
+  height: 100vh;
+}
+  .balance-section, .filtro-section, .operations-section{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 1px 1px rgb(228, 228, 228);
+  }
+  .navbar{
+    height: 15vh;
+  }
+
+.items-balance{
+  width:65vh;
+  
+}
