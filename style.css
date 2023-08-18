@@ -26,15 +26,12 @@ body {
 /*  -------------------------------------------------------------
 -------------------------- Resumen-------------------------------
 ------------------------------------------------------------------*/
-
-.secction-resumen{
-  height: 100vh;
-  
+.item-resumen{
+  background-color: #caebc7; 
+  border-radius: 4px;
+  padding: 6px; 
+            
 }
+   
 
-.items-resumen{
-   
-    border-radius: 5px;
-   
-}
 
