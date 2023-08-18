@@ -34,8 +34,8 @@
     <!-- -------------------------------------------------------------
     -------------------------- Main-------------------------------
     ------------------------------------------------------------------->
-    <main class="container is-flex mt-6 is-multiline ">
-        <section class="colums-both column is-3 ">
+    <main class="container is-flex mt-6 is-multiline">
+        <section class="colums-both column is-3" id="section-column1">
     <!-- -------------------------------------------------------------
     -------------------------- Balance-------------------------------
     ------------------------------------------------------------------->
@@ -60,6 +60,7 @@
                 </div>
             </div>
             </div>
+            
 
     <!-- -------------------------------------------------------------
     --------------------------Filtro-------------------------------
@@ -109,11 +110,12 @@
     <!-- -------------------------------------------------------------
     -------------------------- Operaciones-------------------------------
     ------------------------------------------------------------------->
-        <section class="operations-section column is-8 mb-6 ">
+        <section class="operations-section column is-8 mb-6" id="section-column2">
             <div class="is-flex is-justify-content-space-between ">
                 <h2 class="has-text-weight-bold title is-4">Operaciones</h2>
-                <button class="button is-medium is-primary"><a class="has-text-white" id="button-operacion" href="">+ Nueva
-                        Operación</a></button>
+                <button type="button" class="button is-medium is-primary">
+                    <div class="has-text-white" id="button-operacion" href="">+ Nueva
+                        Operación</div></button>
             </div>
             <div>
                 <figure><img class="img-operaciones image is-100x120" src="assets/undraw_Investment_data_re_sh9x.png"
@@ -126,8 +128,8 @@
         </section>
     </main>
 
-    <!-- Contenedor +Nueva Operacion -->
-    <div class="container">
+    <!-- Contenedor boton +Nueva Operacion -->
+    <div class="container hidden" id="form-operaciones">
         <div class="columns is-justify-content-center">
             <div class="column is-7 container-form">
                 <h2 class="title is-3">
@@ -171,11 +173,20 @@
                             <input class="input" type="number" value=0>
                         </div>
                     </div>
+
+                    <div class="buttons botones-form is-justify-content-flex-end">
+                        <button class="button is-light mr-4">
+                            Cancelar
+                        </button>
+                        <button class="button is-success">
+                            Agregar
+                        </button>
+                    </div>
+                    
                 </form>
             </div>
         </div>
     </div>
-    
 
     <script src="scrip.js"></script>
 </body>
