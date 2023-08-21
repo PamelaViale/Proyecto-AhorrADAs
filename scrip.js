@@ -17,3 +17,13 @@ const returnMain = () =>{
     $('section-column2').classList.remove('hidden');
     $('form-operaciones').classList.add('hidden');
 }
+
+//Boton reportes
+$("button-reportes").addEventListener('click', () => viewReports())
+
+const viewReports = () =>{
+    $("section-reportes").classList.remove('hidden')
+    $('section-column1').classList.add('hidden');
+    $('section-column2').classList.add('hidden');
+    $('form-operaciones').classList.add('hidden');
+}
