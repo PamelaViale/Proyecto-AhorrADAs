@@ -50,3 +50,12 @@ display: none;
 .botones-form{
   margin-top: 80px;
 }
+
+.button{
+  color: white;
+  margin-top: 77px;
+}
+
+.container-categorias{
+  display: flex;
+}
