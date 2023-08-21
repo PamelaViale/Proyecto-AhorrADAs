@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
 <!-- -------------------------------------------------------------
 -------------------------- NavBar-------------------------------
 ------------------------------------------------------------------->
@@ -31,102 +32,214 @@
             </div>
         </div>
     </nav>
-    <!-- -------------------------------------------------------------
-    -------------------------- Main-------------------------------
-    ------------------------------------------------------------------->
+
+
     <main class="container is-flex mt-6 is-multiline">
         <section class="colums-both column is-3" id="section-column1">
-    <!-- -------------------------------------------------------------
+            <!-- -------------------------------------------------------------
     -------------------------- Balance-------------------------------
     ------------------------------------------------------------------->
-            <div class="balance-section column is-flex mb-3 ">
-                <div class="is-flex is-flex-direction-column ">
-                    <h1 class="title is-3 mb-6 has-text-weight-bold ">Balance</h1>
-                    <div class="items-balance columns is-flex is-flex-direction-column">
-                        <div class="is-flex">
-                            <p class="column mb-2">Ganancia</p>
-                            <div class="items-balance column mb-2 has-text-success has-text-rigth">+$0</div>
-                        </div>
-                        <div class="is-flex">
-                            <p class=" column mb-2">Gastos</p>
-                            <div class="items-balance column mb-2 has-text-danger has-text-rigth">-$0</div>
-                        </div>
-                        <div class="is-flex ">
-                            <p class=" column mb-2">Total</p>
-                            <div class=" column mb-2 has-text-weight-bold has-text-rigth"> $0</div>
-                        </div>
-                    </div>
-
+    <div class="balance-section column is-flex mb-3" id="section-column1">
+        <div class="is-flex is-flex-direction-column ">
+            <h1 class="title is-3 mb-6 has-text-weight-bold ">Balance</h1>
+            <div class="items-balance columns is-flex is-flex-direction-column">
+                <div class="is-flex">
+                    <p class="column mb-2">Ganancia</p>
+                    <div class="items-balance column mb-2 has-text-success has-text-rigth">+$0</div>
+                </div>
+                <div class="is-flex">
+                    <p class=" column mb-2">Gastos</p>
+                    <div class="items-balance column mb-2 has-text-danger has-text-rigth">-$0</div>
+                </div>
+                <div class="is-flex ">
+                    <p class=" column mb-2">Total</p>
+                    <div class=" column mb-2 has-text-weight-bold has-text-rigth"> $0</div>
                 </div>
             </div>
-            </div>
+
+        </div>
+    </div>
+    </div>
+    
+
+<!-- -------------------------------------------------------------
+--------------------------Filtro-------------------------------
+------------------------------------------------------------------->
+    <section class="filtro-section column image ">
+        <div class="is-flex is-justify-content-space-between mb-5">
+            <h2 class=" title is-4 has-text-weight-bold">Filtros </h2>
+            <a href="" id="button-filtros">Ocultar Filtros</a>
+        </div>
+        <div class="">
+            <div class="is-flex is-flex-direction-column has-text-weight-bold mb-2">
+                <label class="mb-2" for="">Tipo</label>
+                <select class="select mb-2" name="" id="">
+                    <option value="">Todos</option>
+                    <option value="">Gastos</option>
+                    <option value="">Ganancia</option>
+                </select>
             
+            </div>
+            <div class="is-flex is-flex-direction-column has-text-weight-bold mb-2">
+                <label class="mb-2" for="">Categoría</label>
+                <select class="select mb-2" id="">
+                    <option value="">Comidas</option>
+                    <option value="">Servicios</option>
+                    <option value="">Salidas</option>
+                    <option value="">Transporte</option>
+                </select>
+            </div>
+            <div class="is-flex is-flex-direction-column has-text-weight-bold mb-2">
+                <label class="mb-2" for="">Desde</label>
+                <input class="contro mb-2" type="date" name="" id="">
+            </div>
+            <div class="is-flex is-flex-direction-column has-text-weight-bold mb-2">
+                <label class="mb-2" for="">Ordenar por</label>
+                <select class="select mb-2" name="" id="">
+                    <option value="">Mas reciente</option>
+                    <option value="">Menos reciente</option>
+                    <option value="">Mayor monto</option>
+                    <option value="">Menor monto</option>
+                    <option value="">A/Z</option>
+                    <option value="">Z/A</option>
+                </select>
+            </div>
+        </div>
+    </section>
+</section>
+<!-- -------------------------------------------------------------
+-------------------------- Operaciones-------------------------------
+------------------------------------------------------------------->
+<section class="operations-section column is-8 mb-6" id="section-column2">
+    <div class="is-flex is-justify-content-space-between ">
+        <h2 class="has-text-weight-bold title is-4">Operaciones</h2>
+        <button type="button" class="button is-medium is-primary">
+            <div class="has-text-white" id="button-operacion" href="">+ Nueva
+                Operación</div></button>
+    </div>
+    <div>
+        <figure><img class="img-operaciones image is-100x120" src="assets/undraw_Investment_data_re_sh9x.png"
+                alt=""></figure>
+        <div class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+            <h3 class="has-text-weight-bold is-size-4 mb-3">Sin resultados</h3>
+            <p>Cambiar los filtros o agregar operaciones</p>
 
-    <!-- -------------------------------------------------------------
-    --------------------------Filtro-------------------------------
-    ------------------------------------------------------------------->
-            <section class="filtro-section column image ">
-                <div class="is-flex is-justify-content-space-between mb-5">
-                    <h2 class=" title is-4 has-text-weight-bold">Filtros </h2>
-                    <a href="" id="button-filtros">Ocultar Filtros</a>
-                </div>
-                <div class="">
-                    <div class="is-flex is-flex-direction-column has-text-weight-bold mb-2">
-                        <label class="mb-2" for="">Tipo</label>
-                        <select class="select mb-2" name="" id="">
-                            <option value="">Todos</option>
-                            <option value="">Gastos</option>
-                            <option value="">Ganancia</option>
-                        </select>
-                    
+        </div>
+    </div>
+</section>
+</main>
+
+        <section class="section-resumen mt-6">
+            <div class="container">
+                <div class="columns is-flex is-justify-content-center">
+                    <div class="column is-8 hidden">
+                        <div class="box">
+                            <h2 class="title is-1 is-size-2 has-text-weight-bold mb-6">
+                                Reportes
+                            </h2>
+
+                            <section class="ml-5">
+                                <!-- -------------------------------------------------------------
+-------------------------- Resumen-------------------------------
+------------------------------------------------------------------->
+                                <div>
+                                    <h3 class="title is-3 mb-5">Resumen</h3>
+                                </div>
+
+                            <div class=" columns is-flex is-justify-content-space-between mb-4 ">
+                                <p class="column">Categoría con mayor ganancia</p>
+                                    <div class="column has-text-right"><span class="has-text-info item-resumen">Trabajo</span></div>
+                                <p class="column has-text-right  has-text-weight-bold">+$300000</p>
+                            </div>
+                            <div class="columns is-flex is-justify-content-space-between mb-4 ">
+                                <p class="column ">Categoría con mayor gasto</p>
+                                <div class="column has-text-right"><span class="has-text-info item-resumen ">Servicios</span></div>
+                                <p class="column has-text-right has-text-danger has-text-weight-bold" >-$14000</p>
+                            </div>
+                            <div class="columns is-flex is-justify-content-space-between mb-4 ">
+                                <p class="column">Categoría con mayor balance</p>
+                                <div class="column has-text-right"><span class=" has-text-info item-resumen ">Trabajo</span></div>
+                                <p class="column has-text-right has-text-weight-bold">$300000</p>
+                            </div>
+                            <div class="columns is-flex is-justify-content-space-between mb-4 ">
+                                <p class="column">Mes con mayor ganancia</p>
+                                <span class="column has-text-right">2023/07/02</span>
+                                <p class="column has-text-right has-text-success has-text-weight-bold ">$300000</p>
+                            </div>
+                            <div class="columns is-flex is-justify-content-space-between  mb-4 ">
+                                <p class="column">Mes con mayor gasto</p>
+                                <span class="column has-text-right">2023/03/14</span>
+                                <p class="column has-text-right has-text-danger has-text-weight-bold">-$14000</p>
+                            </div>
+                            <!-- -------------------------------------------------------------
+   -------------------------- Totales por categorías-------------------------------
+------------------------------------------------------------------->
+                            <section class="ml-5 mt-6">
+                                <div>
+                                    <h3 class="title is-4 mb-4">Totales por categorías</h3>
+                                </div>
+
+                                <div class="columns is-flex is-justify-content-space-between has-text-weight-bold mb-3">
+                                    <p class="column">Categoria</p>
+                                    <p class="column has-text-right">Ganancia</p>
+                                    <p class="column has-text-right">Gastos</p>
+                                    <p class="column has-text-right">Balance</p>
+                                </div>
+
+                                <div  class=" columns is-flex is-justify-content-space-between mb-3">
+                                    <p class="column ">Comida</p>
+                                    <p class="column has-text-success has-text-right">+$2000</p>
+                                    <div class="column has-text-danger has-text-right">-$0</div>
+                                    <p class="column has-text-right">$2000</p>
+                                </div>
+                                <div class="columns is-flex is-justify-content-space-between mb-3">
+                                    <p class="column">Servicios</p>
+                                    <p class="column has-text-right has-text-success">-$0</p>
+                                    <p class="column has-text-right has-text-danger">-$14000</p>
+                                    <p class="column has-text-right">-$14000</p>
+                                </div>
+                                <div class="columns is-flex is-justify-content-space-between mb-3">
+                                    <p class="column">Trabajo</p>
+                                    <p class="column has-text-right has-text-success">+$300000</p>
+                                    <p class="column has-text-right has-text-danger">-$0</p>
+                                    <p class="column has-text-right ">+$300000</p>
+                                </div>
+                                <!-- -------------------------------------------------------------
+   -------------------------- Totales por mes-------------------------------
+------------------------------------------------------------------->
+                                <section>
+                                    <div >
+                                        <h3  class="title is-4 mb-4 mt-6">Totales por mes</h3>
+                                    </div>
+
+                                    <div class="columns is-flex is-justify-content-space-between mb-3">
+                                        <p class="column has-text-weight-bold">Mes</p>
+                                        <p class="column has-text-right has-text-weight-bold">Ganacia</p>
+                                        <p class="column has-text-right has-text-weight-bold">Gastos</p>
+                                        <p class="column has-text-right has-text-weight-bold"> Balance</p>
+                                    </div>
+                                    <div class="columns is-flex is-justify-content-space-between mb-3">
+                                        <p class="column ">3/2023</p>
+                                        <p class="column has-text-right has-text-success">+$102000</p>
+                                        <p class="column has-text-right has-text-danger">-$14000</p>
+                                        <p class="column has-text-right">$88000</p>
+                                    </div>
+                                    <div class="columns is-flex is-justify-content-space-between mb-4">
+                                        <p class="column">7/2023</p>
+                                        <p class="column has-text-right has-text-success">+$200000</p>
+                                        <p class="column has-text-right has-text-danger">-$0</p>
+                                        <p class="column has-text-right ">$20000</p>
+                                    </div>
+
+                                </section>
+
+                            </section>
+
+                        </div>
                     </div>
-                    <div class="is-flex is-flex-direction-column has-text-weight-bold mb-2">
-                        <label class="mb-2" for="">Categoría</label>
-                        <select class="select mb-2" id="">
-                            <option value="">Comidas</option>
-                            <option value="">Servicios</option>
-                            <option value="">Salidas</option>
-                            <option value="">Transporte</option>
-                        </select>
-                    </div>
-                    <div class="is-flex is-flex-direction-column has-text-weight-bold mb-2">
-                        <label class="mb-2" for="">Desde</label>
-                        <input class="contro mb-2" type="date" name="" id="">
-                    </div>
-                    <div class="is-flex is-flex-direction-column has-text-weight-bold mb-2">
-                        <label class="mb-2" for="">Ordenar por</label>
-                        <select class="select mb-2" name="" id="">
-                            <option value="">Mas reciente</option>
-                            <option value="">Menos reciente</option>
-                            <option value="">Mayor monto</option>
-                            <option value="">Menor monto</option>
-                            <option value="">A/Z</option>
-                            <option value="">Z/A</option>
-                        </select>
-                    </div>
-                </div>
-            </section>
-        </section>
-    <!-- -------------------------------------------------------------
-    -------------------------- Operaciones-------------------------------
-    ------------------------------------------------------------------->
-        <section class="operations-section column is-8 mb-6" id="section-column2">
-            <div class="is-flex is-justify-content-space-between ">
-                <h2 class="has-text-weight-bold title is-4">Operaciones</h2>
-                <button type="button" class="button is-medium is-primary">
-                    <div class="has-text-white" id="button-operacion" href="">+ Nueva
-                        Operación</div></button>
-            </div>
-            <div>
-                <figure><img class="img-operaciones image is-100x120" src="assets/undraw_Investment_data_re_sh9x.png"
-                        alt=""></figure>
-                <div class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                    <h3 class="has-text-weight-bold is-size-4 mb-3">Sin resultados</h3>
-                    <p>Cambiar los filtros o agregar operaciones</p>
-                </div>
-            </div>
-        </section>
-    </main>
+
+
+    
 
     <!-- Contenedor boton +Nueva Operacion -->
     <div class="container hidden" id="form-operaciones">
